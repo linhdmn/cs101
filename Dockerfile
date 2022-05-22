@@ -1,4 +1,3 @@
-# syntax=registry-gitlab.zalopay.vn/docker/images/dockerfile:experimental
 FROM golang:1.17 as builder
 ENV GO111MODULE=on
 # Working directory
