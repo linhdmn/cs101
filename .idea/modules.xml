@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/cs101.iml" filepath="$PROJECT_DIR$/.idea/cs101.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../zalopay/Services/acquiring/core/topup-payment/.idea/topup-payment.iml" filepath="$PROJECT_DIR$/../../zalopay/Services/acquiring/core/topup-payment/.idea/topup-payment.iml" />
     </modules>
   </component>
 </project>

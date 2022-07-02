@@ -1,0 +1,16 @@
+version: '3.7'
+
+services:
+  mysql:
+    container_name: local.cs101.database
+    image: mysql/mysql-server:5.7.22
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_ROOT_HOST: "123456"
+    ports:
+      - '3306:3306'
+    volumes:
+      - ./mysql:/docker-entrypoint-initdb.d
+    platform: linux/amd64
+
