@@ -1,9 +1,8 @@
 service_name: "cs_101"
 
-client:
-  database:
-    mysql:
-      addr: localhost:3306
-      user: root
-      pass: 123456
-      name: computer_science
+DB:
+  mysql:
+    addr: localhost:3306
+    user: root
+    pass: root
+    name: computer_science

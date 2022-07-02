@@ -2,4 +2,4 @@ devstack:
 	docker-compose up -d
 
 run:
-	air
+	go mod tidy && CONFIG_PATH=config/local.yml air

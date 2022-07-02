@@ -98,10 +98,9 @@ func (s *Server) initDB() error {
 		cfg   = s.cfg.DB.Mysql
 		dbLog = fmt.Sprintf("addr=%s user=%s pass=%s db_name=%s", cfg.Addr, cfg.User, cfg.Pass, cfg.Name)
 	)
-
 	s.logger.Infof("Connecting to db %s", dbLog)
 
-	db, err := sql.Open("mysql", fmt.Sprintf("%s:%s@tpc(%s)/%s?parseTime=true&charset=utf8",
+	db, err := sql.Open("mysql", fmt.Sprintf("%s:%s@tcp(%s)/%s?parseTime=true&charset=utf8",
 		cfg.User, cfg.Pass, cfg.Addr, cfg.Name))
 
 	if err != nil {

@@ -8,6 +8,8 @@ import (
 
 	"cs101/cmd"
 	"cs101/pkg/utils"
+
+	_ "github.com/go-sql-driver/mysql"
 )
 
 func main() {
@@ -16,7 +18,7 @@ func main() {
 		log.Fatalf("config path is empty")
 	}
 	cfg := cmd.Config{}
-	if err := utils.Load(cp, cfg); err != nil {
+	if err := utils.Load(cp, &cfg); err != nil {
 		log.Fatalf("load config : %+v", err)
 	}
 	s := cmd.New(cfg)
